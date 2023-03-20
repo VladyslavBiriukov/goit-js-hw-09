@@ -24,6 +24,7 @@ form.addEventListener('submit', event => {
         });
     }, promiseDelay);
   }
+   event.target.reset()
 });
 
 function createPromise(position, delay) {
