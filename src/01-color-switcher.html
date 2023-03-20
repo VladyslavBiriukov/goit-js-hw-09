@@ -1,17 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Color switcher</title>
-    <link rel="stylesheet" href="css/common.css" />
-  </head>
-  <body>
-    <p><a href="index.html">Go back</a></p>
 
-    <button type="button" data-start>Start</button>
-    <button type="button" data-stop>Stop</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color switcher</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    <script src="js/01-color-switcher.js" type="module"></script>
-  </body>
+    }
+
+    a {
+      text-decoration: none;
+      color: #0077cc;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      background-color: #0077cc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-right: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      background-image: linear-gradient(to right, #0077cc, #0099ff);
+      transition: background-image 0.3s ease;
+    }
+
+    button:hover {
+      background-image: linear-gradient(to right, #0099ff, #0077cc);
+    }
+
+    button:disabled {
+      background-color: #999;
+      cursor: not-allowed;
+    }
+    
+    p {
+      margin-right: auto;
+      padding: 10px 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <p><a href="index.html">Go back</a></p>
+
+  <button type="button" data-start>Start</button>
+  <button type="button" data-stop>Stop</button>
+
+  <script src="js/01-color-switcher.js" type="module"></script>
+</body>
+
 </html>
+
